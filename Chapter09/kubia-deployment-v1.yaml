@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kubia
+  name: seino
 spec:
   replicas: 3
   template:
     metadata:
-      name: kubia
+      name: seino
       labels:
-        app: kubia
+        app: seino
     spec:
       containers:
-      - image: luksa/kubia:v1
+      - image: lseino/seino:v1
         name: nodejs
   selector:
     matchLabels:
-      app: kubia
+      app: seino

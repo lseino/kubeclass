@@ -4,7 +4,7 @@ metadata:
   name: fortune-args-from-configmap
 spec:
   containers:
-  - image: luksa/fortune:args
+  - image: lseino/fortune:args
     env:
     - name: INTERVAL
       valueFrom: 

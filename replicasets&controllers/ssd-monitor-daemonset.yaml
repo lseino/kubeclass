@@ -15,5 +15,5 @@ spec:
         disk: ssd
       containers:
       - name: main
-        image: luksa/ssd-monitor
+        image: lseino/ssd-monitor
 

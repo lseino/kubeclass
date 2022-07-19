@@ -4,8 +4,8 @@ metadata:
   name: pod-with-prestop-hook
 spec:
   containers:
-  - image: luksa/kubia
-    name: kubia
+  - image: lseino/seino
+    name: seino
     command:
     - sh
     - -c

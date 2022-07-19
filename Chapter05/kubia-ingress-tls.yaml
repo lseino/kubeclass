@@ -1,17 +1,17 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: kubia
+  name: seino
 spec:
   tls:
   - hosts: 
-    - kubia.example.com
+    - seino.example.com
     secretName: tls-secret
   rules:
-  - host: kubia.example.com
+  - host: seino.example.com
     http:
       paths:
       - path: /
         backend:
-          serviceName: kubia-nodeport
+          serviceName: seino-nodeport
           servicePort: 80

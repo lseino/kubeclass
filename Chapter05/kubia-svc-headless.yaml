@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: kubia-headless
+  name: seino-headless
 spec:
   clusterIP: None
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app: kubia
+    app: seino
 

@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: kubia-manual
-  namespace: custom-namespace
+  name: seino-manual
 spec:
   containers:
-  - image: luksa/kubia
-    name: kubia
+  - image: lseino/seino
+    name: seino
     ports:
     - containerPort: 8080
       protocol: TCP

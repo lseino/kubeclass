@@ -1,18 +1,18 @@
 apiVersion: apps/v1beta1
 kind: StatefulSet
 metadata:
-  name: kubia
+  name: seino
 spec:
-  serviceName: kubia
+  serviceName: seino
   replicas: 3
   template:
     metadata:
       labels:
-        app: kubia
+        app: seino
     spec:
       containers:
-      - name: kubia
-        image: luksa/kubia-pet-peers
+      - name: seino
+        image: lseino/seino-pet-peers
         ports:
         - name: http
           containerPort: 8080

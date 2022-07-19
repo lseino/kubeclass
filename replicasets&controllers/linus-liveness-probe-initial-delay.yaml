@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: kubia-liveness
+  name: seino-liveness
 spec:
   containers:
-  - image: luksa/kubia-unhealthy
-    name: kubia
+  - image: lseino/seino-unhealthy
+    name: seino
     livenessProbe:
       httpGet:
         path: /
         port: 8080
+      initialDelaySeconds: 15
 

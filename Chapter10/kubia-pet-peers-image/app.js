@@ -3,8 +3,8 @@ const os = require('os');
 const fs = require('fs');
 const dns = require('dns');
 
-const dataFile = "/var/data/kubia.txt";
-const serviceName = "kubia.default.svc.cluster.local";
+const dataFile = "/var/data/seino.txt";
+const serviceName = "seino.default.svc.cluster.local";
 const port = 8080;
 
 

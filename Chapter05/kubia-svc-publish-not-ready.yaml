@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: kubia-all
+  name: seino-all
 spec:
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app: kubia
+    app: seino
   publishNotReadyEndpoints: true
 

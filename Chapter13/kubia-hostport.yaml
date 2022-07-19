@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: kubia-hostport
+  name: seino-hostport
 spec:
   containers:
-  - image: luksa/kubia
-    name: kubia
+  - image: lseino/seino
+    name: seino
     ports:
     - containerPort: 8080
       hostPort: 9000

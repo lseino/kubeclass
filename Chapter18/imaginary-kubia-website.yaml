@@ -1,6 +1,6 @@
 kind: Website
 metadata:
-  name: kubia
+  name: seino
 spec:
-  gitRepo: https://github.com/luksa/kubia-website-example.git
+  gitRepo: https://github.com/lseino/seino-website-example.git
 

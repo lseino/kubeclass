@@ -1,9 +1,9 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: multi-completion-batch-job
+  name: time-limited-batch-job
 spec:
-  completions: 5
+  activeDeadlineSeconds: 30
   template:
     metadata:
       labels:
@@ -12,6 +12,6 @@ spec:
       restartPolicy: OnFailure
       containers:
       - name: main
-        image: luksa/batch-job
+        image: lseino/batch-job
 
 

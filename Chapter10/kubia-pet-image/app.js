@@ -2,7 +2,7 @@ const http = require('http');
 const os = require('os');
 const fs = require('fs');
 
-const dataFile = "/var/data/kubia.txt";
+const dataFile = "/var/data/seino.txt";
 
 function fileExists(file) {
   try {

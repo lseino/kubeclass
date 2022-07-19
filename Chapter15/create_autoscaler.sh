@@ -1,3 +1,3 @@
 
-kubectl autoscale deployment kubia --cpu-percent=30 --min=1 --max=5
+kubectl autoscale deployment seino --cpu-percent=30 --min=1 --max=5
 

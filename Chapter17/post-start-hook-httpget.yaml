@@ -4,8 +4,8 @@ metadata:
   name: pod-with-poststart-hook
 spec:
   containers:
-  - image: luksa/kubia
-    name: kubia
+  - image: lseino/seino
+    name: seino
     ports:
     - containerPort: 8080
       protocol: TCP

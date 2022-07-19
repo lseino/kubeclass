@@ -1,19 +1,19 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: kubia
+  name: seino
 spec:
   replicas: 3
   selector:
-    app: kubia
+    app: seino
   template:
     metadata:
       labels:
-        app: kubia
+        app: seino
     spec:
       containers:
-      - name: kubia
-        image: luksa/kubia
+      - name: seino
+        image: lseino/seino
         ports:
         - name: http
           containerPort: 8080

@@ -1,4 +1,4 @@
-package kubia;
+package seino;
 
 import io.fabric8.kubernetes.api.model.Pod;
 import io.fabric8.kubernetes.api.model.PodList;

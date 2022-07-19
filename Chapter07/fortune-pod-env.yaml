@@ -4,7 +4,7 @@ metadata:
   name: fortune-env
 spec:
   containers:
-  - image: luksa/fortune:env
+  - image: lseino/fortune:env
     env:
     - name: INTERVAL
       value: "30"

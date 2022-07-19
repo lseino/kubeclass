@@ -1,3 +1,3 @@
 
-kubectl expose deployment kubia --port=80 --target-port=8080
+kubectl expose deployment seino --port=80 --target-port=8080
 

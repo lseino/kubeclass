@@ -4,7 +4,7 @@ metadata:
   name: memoryhog
 spec:
   containers:
-  - image: docker.io/luksa/memoryhog
+  - image: docker.io/lseino/memoryhog
     args: ["1500000000"]
     name: main
     resources:

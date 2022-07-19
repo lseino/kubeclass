@@ -4,7 +4,6 @@ metadata:
   name: multi-completion-batch-job
 spec:
   completions: 5
-  parallelism: 2
   template:
     metadata:
       labels:
@@ -13,6 +12,6 @@ spec:
       restartPolicy: OnFailure
       containers:
       - name: main
-        image: luksa/batch-job
+        image: lseino/batch-job
 
 
