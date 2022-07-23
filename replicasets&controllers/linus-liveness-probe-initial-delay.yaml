@@ -4,11 +4,10 @@ metadata:
   name: seino-liveness
 spec:
   containers:
-  - image: lseino/seino-unhealthy
-    name: seino
-    livenessProbe:
-      httpGet:
-        path: /
-        port: 8080
-      initialDelaySeconds: 15
-
+    - image: lseino/seino-unhealthy
+      name: seino
+      livenessProbe:
+        httpGet:
+          path: /
+          port: 8080
+        initialDelaySeconds: 10
