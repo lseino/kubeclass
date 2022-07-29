@@ -1,0 +1,34 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: seino
+  labels:
+    app: seino
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: seino
+  template:
+    metadata:
+      labels:
+        app: seino
+    spec:
+      containers:
+      - name: seino
+        image: lseino/seino:v1
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: seino
+spec:
+  type: LoadBalancer
+  selector:
+    app: seino
+  ports:
+  - port: 80
+    targetPort: 8080

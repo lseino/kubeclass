@@ -1,6 +1,0 @@
-kind: Website
-metadata:
-  name: seino
-spec:
-  gitRepo: https://github.com/lseino/seino-website-example.git
-

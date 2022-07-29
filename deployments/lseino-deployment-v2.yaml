@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: seino
+spec:
+  template:
+    metadata:
+      name: seino
+      labels:
+        app: seino
+    spec:
+      containers:
+      - image: lseino/seino:v2
+        name: nodejs
